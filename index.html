@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <span id="name_output">Адмирал</span>
+            <span id="surname_output">Бенбоу</span>
+        </h1>
+    </header>
+
+    <div class="content-page">
+    <div class="header">
+        <img width='400' height='400' src="./images/Jotaro.jpg">
+    </div>
+
+    <div class="input-items">
+        <div class="mb-15">
+            <div class="input-with-btn-container">
+                <div class="input-container">
+                    <input type="text" size="22" id="name_input" required="" />
+                    <label>Введите ваше имя</label>
+                </div>
+                <button onclick="name_change()">подтвердить</button><br>
+            </div>
+            <div class="input-with-btn-container">
+                <div class="input-container">
+                    <input type="text" size="22" id="surname_input" required="" />
+                    <label>Введите вашу фамилию</label>
+                </div>
+                <div class="button-container">
+                    <button onclick="surname_change()">подтвердить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-15">
+            <div class="input-with-btn-container">
+                <div class="input-container">
+                    <input type="number" id="age" required="" />
+                    <label>Введите ваш возраст</label>
+                </div>
+                <button type="button" onclick="con()">подтвердить</button><br>
+            </div>
+        </div>
+
+        <div class="mb-15">
+            <!-- <div class="input-container">-->
+            <label>Напишите 5 своих увлечений:<br><textarea id="hobby" cols="30" rows="2"></textarea></label><br />
+        </div>
+        <!--  </div>-->
+
+
+                    <div class="mb-15">
+                        <label>Я согласен на обработку личных данных<input type="checkbox" id="submition"></label>
+                    </div>
+
+                    <div class="mb-15">
+                        <div class="input-with-btn-container">
+                            <div class="input-container">
+                                <input type="number" id="fnum" required="" />
+                                <label>Первое число</label>
+                             </div>
+                                <div class="input-container">
+                                <input type="number" id="snum" required="" />
+                               <br> <label>Второе число </label>
+                                </div>
+                                <button type="button" onclick="equal()">Try it</button><br>
+                            </div>
+                        </div>
+                            
+                        
+
+
+                            <div class="mb-15">
+                                <div class="input-with-btn-container">
+                                    <div class="input-container">
+                                        <input type="text" id="name" required="" />
+                                        <label>Имя:</label>
+                                    </div>
+                                    <button type="button" onclick="admin()">Try it</button><br>
+                                </div>
+                                <div id="admin"></div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script src="script1.js"></script>
+        <script src="script2.js"></script>
+        <script src="script3.js"></script>
+        <script src="script4.js"></script>
+    </body>
+    </html>
+
+    <!-- document.getElementById("myText").disabled = true; -->
